@@ -1,0 +1,38 @@
+group 'com.tencent.game.native_image_view'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    dependencies {
+        //增加图片加载库依赖
+        implementation 'com.github.bumptech.glide:glide:4.11.0'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    }
+}
