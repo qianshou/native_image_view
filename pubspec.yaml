@@ -1,8 +1,7 @@
 name: native_image_view
-description: A new flutter plugin project.
+description: 该组件提供了一种方式，可以让flutter通过methodChannel调用原生的本地和网络图片的加载
 version: 0.0.1
-author:
-homepage:
+repository: https://github.com/qianshou/native_image_view
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
